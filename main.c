@@ -4,17 +4,12 @@
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-int main(int argc, char *argv[]) {
+void main(void) {
+	char src[] = "The worst thing to eat before you sleep";
+	char dst[100];
 	
-	int i = 0;
-	char str[4];
+	strcpy(dst, src);
 	
-	str[0] = 'a';
-	str[1] = 'b';
-	str[2] = 'c';
-	str[3] = '\0';
+	printf("copied string : %s", dst);
 	
-	printf("%s\n", str);
-	
-	return 0;
 }
